@@ -1,0 +1,4 @@
+topic_name: "/apollo/localization/pose"
+bind_port: 8900
+proto_name: "LocalizationEstimate"
+enable_timeout: false

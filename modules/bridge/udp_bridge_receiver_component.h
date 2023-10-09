@@ -25,7 +25,9 @@
 #include <vector>
 
 #include "modules/bridge/proto/udp_bridge_remote_info.pb.h"
+#include "modules/common_msgs/localization_msgs/localization.pb.h"
 #include "modules/common_msgs/chassis_msgs/chassis.pb.h"
+#include "modules/common_msgs/prediction_msgs/prediction_obstacle.pb.h"
 
 #include "cyber/class_loader/class_loader.h"
 #include "cyber/component/component.h"
@@ -80,5 +82,7 @@ class UDPBridgeReceiverComponent final : public cyber::Component<> {
 };
 
 RECEIVER_BRIDGE_COMPONENT_REGISTER(canbus::Chassis)
+RECEIVER_BRIDGE_COMPONENT_REGISTER(localization::LocalizationEstimate)
+RECEIVER_BRIDGE_COMPONENT_REGISTER(perception::PerceptionObstacles)
 }  // namespace bridge
 }  // namespace apollo

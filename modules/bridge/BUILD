@@ -58,6 +58,8 @@ cc_library(
         "//modules/bridge/proto:udp_bridge_remote_info_cc_proto",
         "//modules/common_msgs/chassis_msgs:chassis_cc_proto",
         "//modules/common_msgs/planning_msgs:planning_cc_proto",
+        "//modules/common_msgs/control_msgs:control_cmd_cc_proto",
+        "//modules/common_msgs/prediction_msgs:prediction_obstacle_cc_proto",
         "//modules/common/monitor_log",
         "//modules/common/util",
     ],

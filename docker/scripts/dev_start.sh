@@ -438,6 +438,9 @@ function main() {
     set -x
 
     ${DOCKER_RUN_CMD} -itd \
+        -p 8900:8900 \
+        -p 8901:8901 \
+        -p 8902:8902 \
         --privileged \
         --name "${DEV_CONTAINER}" \
         -e DISPLAY="${display}" \

@@ -83,6 +83,7 @@ class UDPBridgeReceiverComponent final : public cyber::Component<> {
 
 RECEIVER_BRIDGE_COMPONENT_REGISTER(canbus::Chassis)
 RECEIVER_BRIDGE_COMPONENT_REGISTER(localization::LocalizationEstimate)
-RECEIVER_BRIDGE_COMPONENT_REGISTER(perception::PerceptionObstacles)
+// RECEIVER_BRIDGE_COMPONENT_REGISTER(perception::PerceptionObstacles)
+RECEIVER_BRIDGE_COMPONENT_REGISTER(prediction::PredictionObstacles)
 }  // namespace bridge
 }  // namespace apollo

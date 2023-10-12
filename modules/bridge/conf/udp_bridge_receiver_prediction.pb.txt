@@ -1,0 +1,4 @@
+topic_name: "/apollo/prediction"
+bind_port: 8902
+proto_name: "PredictionObstacles"
+enable_timeout: false
